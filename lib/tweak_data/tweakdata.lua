@@ -24,8 +24,8 @@
 					hos = { strafe = 300, fwd = 300, bwd = 300 },
 					cbt = { strafe = 300, fwd = 300, bwd = 300 } },
 				run = {
-					hos = { strafe = 500, fwd = 500, bwd = 500 },
-					cbt = { strafe = 500, fwd = 500, bwd = 500 } } },
+					hos = { strafe = 700, fwd = 700, bwd = 700 },
+					cbt = { strafe = 700, fwd = 700, bwd = 700 } } },
 			crouch = {
 				walk = {
 					hos = { strafe = 300, fwd = 300, bwd = 300 },
@@ -204,6 +204,7 @@ for _, v in pairs(tweak_data.character) do
 	end
 
 end
+
 
 
 
