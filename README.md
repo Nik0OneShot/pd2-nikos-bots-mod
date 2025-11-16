@@ -6,12 +6,15 @@ this is designed to be used with useful bots, but it should work just fine on it
 changes:
 
 1- bots have lower health values.
+
 (1000 on easy, normal, hard, very hard, and overkill, 2000 on mayhem and death wish, 3000 on death sentence.)
 
 2- bots have slightly higher bleedout health values.
+
 (500 on easy, normal, hard, very hard, and overkill, 1000 on mayhem and death wish, 1500 on death sentence.)
 
 3- bots have slightly longer regeneration times.
+
 (2s on easy, normal, hard, very hard, and overkill, 4s on mayhem and death wish, 6s on death sentence)
 
 4- bots have new and unique presets.
