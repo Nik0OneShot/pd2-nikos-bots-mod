@@ -93,7 +93,7 @@ local gang_member_weapon = { is_pistol = {} }
 		{ dmg_mul = 7.5, r = 10000, acc = { 1, 1 }, recoil = { 1.5, 2 }, mode = { 0.1, 0.3, 4, 7 } } }
 	gang_member_weapon.is_rifle = {
 		aim_delay = { 0, 0 },
-		focus_delay = 5,
+		focus_delay = 1,
 		focus_dis = 3000,
 		spread = 25,
 		miss_dis = 10,
@@ -124,7 +124,7 @@ local gang_member_weapon = { is_pistol = {} }
 			{ dmg_mul = 10, r = 10000, acc = { 0.75, 1 }, recoil = { 4, 5 }, mode = { 1, 0, 0, 0 } } } }
 	gang_member_weapon.is_lmg = {
 		aim_delay = { 0, 0 },
-		focus_delay = 5,
+		focus_delay = 1,
 		focus_dis = 3000,
 		spread = 30,
 		miss_dis = 10,
@@ -135,12 +135,12 @@ local gang_member_weapon = { is_pistol = {} }
 		range = { optimal = 2500, far = 6000, close = 1500 },
 		autofire_rounds = tweak_data.character.presets.weapon.normal.is_lmg.autofire_rounds,
 		FALLOFF = {
-			{ dmg_mul = 4, r = 100, acc = { 0.5, 0.8 }, recoil = { 0.25, 0.45 }, mode = { 0, 0, 0, 1 } },
-			{ dmg_mul = 4, r = 1000, acc = { 0.5, 0.8 }, recoil = { 0.4, 0.65 }, mode = { 0, 0, 0, 1 } },
-			{ dmg_mul = 4, r = 10000, acc = { 0.5, 0.8 }, recoil = { 2, 3 }, mode = { 0, 0, 0, 1 } } } }
+			{ dmg_mul = 5, r = 100, acc = { 0.5, 0.8 }, recoil = { 0.25, 0.45 }, mode = { 0, 0, 0, 1 } },
+			{ dmg_mul = 5, r = 1000, acc = { 0.5, 0.8 }, recoil = { 0.4, 0.65 }, mode = { 0, 0, 0, 1 } },
+			{ dmg_mul = 5, r = 10000, acc = { 0.5, 0.8 }, recoil = { 2, 3 }, mode = { 0, 0, 0, 1 } } } }
 	gang_member_weapon.is_shotgun_pump = {
 		aim_delay = { 0, 0 },
-		focus_delay = 5,
+		focus_delay = 1,
 		focus_dis = 2000,
 		spread = 15,
 		miss_dis = 10,
@@ -155,7 +155,7 @@ local gang_member_weapon = { is_pistol = {} }
 			{ dmg_mul = 5, r = 10000, acc = { 0.75, 1 }, recoil = { 1.5, 2 }, mode = { 0.1, 0.3, 4, 7 } } } }
 	gang_member_weapon.is_shotgun_mag = {
 		aim_delay = { 0, 0 },
-		focus_delay = 5,
+		focus_delay = 1,
 		focus_dis = 2000,
 		spread = 18,
 		miss_dis = 10,
@@ -204,5 +204,6 @@ for _, v in pairs(tweak_data.character) do
 	end
 
 end
+
 
 
