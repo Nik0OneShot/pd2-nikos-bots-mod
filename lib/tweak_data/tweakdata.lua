@@ -193,21 +193,16 @@ for _, v in pairs(tweak_data.character) do
 		if difficulty_index < 4 then
 			v.damage.HEALTH_INIT = 100
 			v.damage.BLEED_OUT_HEALTH_INIT = 50
-			v.damage.REGENERATE_TIME = 2
-			v.damage.REGENERATE_TIME_AWAY = 2
 		elseif difficulty_index < 6 then
 			v.damage.HEALTH_INIT = 200
 			v.damage.BLEED_OUT_HEALTH_INIT = 100
-			v.damage.REGENERATE_TIME = 4
-			v.damage.REGENERATE_TIME_AWAY = 4
 		else
 			v.damage.HEALTH_INIT = 300
 			v.damage.BLEED_OUT_HEALTH_INIT = 150
-			v.damage.REGENERATE_TIME = 6
-			v.damage.REGENERATE_TIME_AWAY = 6
 		end
 			tweak_data.team_ai.stop_action.distance = 9999999999
 	end
 
 end
+
 
