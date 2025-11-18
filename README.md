@@ -3,15 +3,17 @@ a "better" bots mod that makes the bots more balanced over making them overpower
 
 this is designed to be used with useful bots, but it should work just fine on it's own.
 
+note that this **exclusively** works in singleplayer. it will not work online, even if all players have the mod. this is to avoid desync issues.
+
 changes:
 
 1- bots have lower health values.
 
-(1000 on easy, normal, hard, very hard, and overkill, 2000 on mayhem and death wish, 3000 on death sentence.)
+(1000 on easy, normal, hard, very hard, and overkill, 2000 on mayhem and death wish, 4000 on death sentence.)
 
 2- bots have slightly higher bleedout health values.
 
-(500 on easy, normal, hard, very hard, and overkill, 1000 on mayhem and death wish, 1500 on death sentence.)
+(500 on easy, normal, hard, very hard, and overkill, 1000 on mayhem and death wish, 2000 on death sentence.)
 
 3- bots have slightly longer regeneration times.
 
