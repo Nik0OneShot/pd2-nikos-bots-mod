@@ -31,8 +31,8 @@
 					hos = { strafe = 300, fwd = 300, bwd = 300 },
 					cbt = { strafe = 300, fwd = 300, bwd = 300 } },
 				run = {
-					hos = { strafe = 500, fwd = 500, bwd = 500 },
-					cbt = { strafe = 500, fwd = 500, bwd = 500 } } } }
+					hos = { strafe = 300, fwd = 300, bwd = 300 },
+					cbt = { strafe = 300, fwd = 300, bwd = 300 } } } }
 					
 	local gang_member_dodge = {
 			speed = 1.2,
@@ -83,17 +83,17 @@ local gang_member_weapon = { is_pistol = {} }
 	gang_member_weapon.is_pistol.melee_retry_delay = tweak_data.character.presets.weapon.normal.is_pistol.melee_retry_delay
 	gang_member_weapon.is_pistol.range = { optimal = 2500, far = 6000, close = 1500 }
 	gang_member_weapon.is_pistol.FALLOFF = {
-		{ dmg_mul = 5, r = 700, acc = { 1, 1 }, recoil = { 0.25, 0.45 }, mode = { 0.1, 0.3, 4, 7 } },
-		{ dmg_mul = 5, r = 1200, acc = { 1, 1 }, recoil = { 0.4, 0.7 }, mode = { 0.1, 0.3, 4, 7 } },
-		{ dmg_mul = 5, r = 10000, acc = { 1, 1 }, recoil = { 0.7, 1 }, mode = { 0.1, 0.3, 4, 7 } } }
+		{ dmg_mul = 7.5, r = 700, acc = { 1, 1 }, recoil = { 0.25, 0.45 }, mode = { 0.1, 0.3, 4, 7 } },
+		{ dmg_mul = 7.5, r = 1200, acc = { 1, 1 }, recoil = { 0.4, 0.7 }, mode = { 0.1, 0.3, 4, 7 } },
+		{ dmg_mul = 7.5, r = 10000, acc = { 1, 1 }, recoil = { 0.7, 1 }, mode = { 0.1, 0.3, 4, 7 } } }
 	gang_member_weapon.is_revolver = deep_clone(tweak_data.character.presets.weapon.gang_member.is_pistol)
 	gang_member_weapon.is_revolver.FALLOFF = {
-		{ dmg_mul = 7.5, r = 700, acc = { 1, 1 }, recoil = { 0.5, 0.9 }, mode = { 0.1, 0.3, 4, 7 } },
-		{ dmg_mul = 7.5, r = 1200, acc = { 1, 1 }, recoil = { 0.9, 1.4 }, mode = { 0.1, 0.3, 4, 7 } },
-		{ dmg_mul = 7.5, r = 10000, acc = { 1, 1 }, recoil = { 1.5, 2 }, mode = { 0.1, 0.3, 4, 7 } } }
+		{ dmg_mul = 12.5, r = 700, acc = { 1, 1 }, recoil = { 0.5, 0.9 }, mode = { 0.1, 0.3, 4, 7 } },
+		{ dmg_mul = 12.5, r = 1200, acc = { 1, 1 }, recoil = { 0.9, 1.4 }, mode = { 0.1, 0.3, 4, 7 } },
+		{ dmg_mul = 12.5, r = 10000, acc = { 1, 1 }, recoil = { 1.5, 2 }, mode = { 0.1, 0.3, 4, 7 } } }
 	gang_member_weapon.is_rifle = {
 		aim_delay = { 0, 0 },
-		focus_delay = 1,
+		focus_delay = 5,
 		focus_dis = 3000,
 		spread = 25,
 		miss_dis = 10,
@@ -104,9 +104,9 @@ local gang_member_weapon = { is_pistol = {} }
 		range = { optimal = 2500, far = 6000, close = 1500 },
 		autofire_rounds = tweak_data.character.presets.weapon.normal.is_rifle.autofire_rounds,
 		FALLOFF = {
-			{ dmg_mul = 5, r = 300, acc = { 0.5, 0.8 }, recoil = { 0.25, 0.45 }, mode = { 0.1, 0.3, 4, 7 } },
-			{ dmg_mul = 5, r = 1000, acc = { 0.5, 0.8 }, recoil = { 0.6, 1.1 }, mode = { 0.1, 0.3, 4, 7 } },
-			{ dmg_mul = 5, r = 10000, acc = { 0.5, 0.8 }, recoil = { 1, 1.5 }, mode = { 0.1, 0.3, 4, 7 } } } }
+			{ dmg_mul = 7, r = 300, acc = { 0.75, 1 }, recoil = { 0.25, 0.45 }, mode = { 0.1, 0.3, 4, 7 } },
+			{ dmg_mul = 7, r = 1000, acc = { 0.75, 1 }, recoil = { 0.6, 1.1 }, mode = { 0.1, 0.3, 4, 7 } },
+			{ dmg_mul = 7, r = 10000, acc = { 0.75, 1 }, recoil = { 1, 1.5 }, mode = { 0.1, 0.3, 4, 7 } } } }
 	gang_member_weapon.is_sniper = {
 		aim_delay = { 0, 0 },
 		focus_delay = 1,
@@ -124,7 +124,7 @@ local gang_member_weapon = { is_pistol = {} }
 			{ dmg_mul = 10, r = 10000, acc = { 0.75, 1 }, recoil = { 4, 5 }, mode = { 1, 0, 0, 0 } } } }
 	gang_member_weapon.is_lmg = {
 		aim_delay = { 0, 0 },
-		focus_delay = 1,
+		focus_delay = 5,
 		focus_dis = 3000,
 		spread = 30,
 		miss_dis = 10,
@@ -135,12 +135,12 @@ local gang_member_weapon = { is_pistol = {} }
 		range = { optimal = 2500, far = 6000, close = 1500 },
 		autofire_rounds = tweak_data.character.presets.weapon.normal.is_lmg.autofire_rounds,
 		FALLOFF = {
-			{ dmg_mul = 5, r = 100, acc = { 0.5, 0.8 }, recoil = { 0.25, 0.45 }, mode = { 0, 0, 0, 1 } },
-			{ dmg_mul = 5, r = 1000, acc = { 0.5, 0.8 }, recoil = { 0.4, 0.65 }, mode = { 0, 0, 0, 1 } },
-			{ dmg_mul = 5, r = 10000, acc = { 0.5, 0.8 }, recoil = { 2, 3 }, mode = { 0, 0, 0, 1 } } } }
+			{ dmg_mul = 7, r = 100, acc = { 0.75, 1 }, recoil = { 0.25, 0.45 }, mode = { 0, 0, 0, 1 } },
+			{ dmg_mul = 7, r = 1000, acc = { 0.75, 1 }, recoil = { 0.4, 0.65 }, mode = { 0, 0, 0, 1 } },
+			{ dmg_mul = 7, r = 10000, acc = { 0.75, 1 }, recoil = { 2, 3 }, mode = { 0, 0, 0, 1 } } } }
 	gang_member_weapon.is_shotgun_pump = {
 		aim_delay = { 0, 0 },
-		focus_delay = 1,
+		focus_delay = 5,
 		focus_dis = 2000,
 		spread = 15,
 		miss_dis = 10,
@@ -155,7 +155,7 @@ local gang_member_weapon = { is_pistol = {} }
 			{ dmg_mul = 5, r = 10000, acc = { 0.75, 1 }, recoil = { 1.5, 2 }, mode = { 0.1, 0.3, 4, 7 } } } }
 	gang_member_weapon.is_shotgun_mag = {
 		aim_delay = { 0, 0 },
-		focus_delay = 1,
+		focus_delay = 5,
 		focus_dis = 2000,
 		spread = 18,
 		miss_dis = 10,
@@ -179,7 +179,7 @@ local gang_member_weapon = { is_pistol = {} }
 	gang_member_weapon.is_flamethrower = tweak_data.character.presets.weapon.normal.is_flamethrower
 
 for _, v in pairs(tweak_data.character) do
-	if type(v) == "table" and v.access == "teamAI1" then
+	if type(v) == "table" and v.access == "teamAI1" and is_offline then
 		v.no_run_start = true
 		v.no_run_stop = true
 		v.always_face_enemy = true
@@ -197,14 +197,9 @@ for _, v in pairs(tweak_data.character) do
 			v.damage.HEALTH_INIT = 200
 			v.damage.BLEED_OUT_HEALTH_INIT = 100
 		else
-			v.damage.HEALTH_INIT = 300
-			v.damage.BLEED_OUT_HEALTH_INIT = 150
+			v.damage.HEALTH_INIT = 400
+			v.damage.BLEED_OUT_HEALTH_INIT = 200
 		end
 			tweak_data.team_ai.stop_action.distance = 9999999999
 	end
-
 end
-
-
-
-
