@@ -9,7 +9,7 @@ function WeaponTweakData:_init_data_amcar_crew()
 	  self.amcar_crew.CLIP_AMMO_MAX = 30
 	  self.amcar_crew.NR_CLIPS_MAX = 69420
 	  self.amcar_crew.pull_magazine_during_reload = "rifle"
-	  self.amcar_crew.auto.fire_rate = 60 / 800
+	  self.amcar_crew.auto.fire_rate = 60 / 1200
 	  self.amcar_crew.hold = "rifle"
 	  self.amcar_crew.alert_size = 5000
 	  self.amcar_crew.suppression = 1
