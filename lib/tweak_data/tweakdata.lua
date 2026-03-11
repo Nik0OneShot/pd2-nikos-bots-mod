@@ -1,4 +1,3 @@
-	local is_server = Network:is_server()
 	local is_offline = Global and Global.game_settings and Global.game_settings.single_player
 	local difficulty = Global.game_settings and Global.game_settings.difficulty or "normal"
 	local difficulty_index = tweak_data:difficulty_to_index(difficulty)
@@ -203,3 +202,4 @@ for _, v in pairs(tweak_data.character) do
 			tweak_data.team_ai.stop_action.distance = 9999999999
 	end
 end
+
